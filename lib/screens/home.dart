@@ -5,6 +5,7 @@ import 'package:covid_aware_app/data.dart';
 import 'package:covid_aware_app/screens/countryScreen.dart';
 import 'package:covid_aware_app/screens/faqScreen.dart';
 import 'package:covid_aware_app/screens/mapScreen.dart';
+import 'package:covid_aware_app/screens/xrayTestScreen.dart';
 import 'package:covid_aware_app/widgets/MostAffectedCountries.dart';
 import 'package:covid_aware_app/widgets/worldWidePanel.dart';
 import 'package:flutter/material.dart';
@@ -354,15 +355,15 @@ class _HomeState extends State<Home> {
           ),
         ),
         onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => MapScreen()));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => XrayTestScreen()));
         },
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             Icon(Icons.map_outlined),
             Text(
-              ' Maps Section',
+              'Covid Test',
               style: TextStyle(
                   fontSize: 18,
                   color: Colors.white,

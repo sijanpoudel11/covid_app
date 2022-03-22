@@ -102,11 +102,11 @@ class _XrayTestScreenState extends State<XrayTestScreen> {
                           width: 200,
                           child: Column(
                             children: <Widget>[
-                              Image.asset(
-                                'assets/covid.png',
-                                cacheHeight: 200,
-                                cacheWidth: 200,
-                              ),
+                              // Image.network(
+                              //   "",
+                              //   cacheHeight: 200,
+                              //   cacheWidth: 200,
+                              // ),
                               SizedBox(height: 50),
                             ],
                           ))
