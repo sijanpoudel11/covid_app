@@ -337,7 +337,7 @@ class _XrayTestScreenState extends State<XrayTestScreen> {
                                   : Container(),
                               // _output![0]['index'] == 0
                               //     ?
-                              hospitalRecomendation()
+                              //  hospitalRecomendation()
                               //    : SizedBox.shrink()
                             ],
                           ),
