@@ -95,19 +95,6 @@ class _HomeState extends State<Home> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              height: 100,
-              color: Colors.orange[100],
-              alignment: Alignment.center,
-              padding: EdgeInsets.all(10),
-              child: Text(
-                DataSource.quote,
-                style: TextStyle(
-                    color: Colors.orange[800],
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 7),
               child: Row(
@@ -120,22 +107,22 @@ class _HomeState extends State<Home> {
                           TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  TextButton(
-                      style: TextButton.styleFrom(
-                          backgroundColor: primaryBlack,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15))),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    COUNTRYSCREEN(countryData: countryData!)));
-                      },
-                      child: Text(
-                        'Favorites',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      )),
+                  // TextButton(
+                  //     style: TextButton.styleFrom(
+                  //         backgroundColor: primaryBlack,
+                  //         shape: RoundedRectangleBorder(
+                  //             borderRadius: BorderRadius.circular(15))),
+                  //     onPressed: () {
+                  //       Navigator.push(
+                  //           context,
+                  //           MaterialPageRoute(
+                  //               builder: (context) =>
+                  //                   COUNTRYSCREEN(countryData: countryData!)));
+                  //     },
+                  //     child: Text(
+                  //       'Favorites',
+                  //       style: TextStyle(color: Colors.white, fontSize: 16),
+                  //     )),
                   TextButton(
                       style: TextButton.styleFrom(
                           backgroundColor: primaryBlack,
@@ -171,8 +158,8 @@ class _HomeState extends State<Home> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            addCountry(context),
-            mapsSection(context),
+            // addCountry(context),
+            //  mapsSection(context),
             checkxray(context),
             myCountry == null
                 ? Center(child: CircularProgressIndicator())
